@@ -9,6 +9,8 @@ void rmNewLine(bstring a) {
 }
 
 int main(void) {
+
+    printf("Please enter a string to check its length: ");
     bstring s = bgets ((bNgetc) fgetc, stdin, '\n');
     if(s) {  //Check that a string was read
         rmNewLine(s);
@@ -24,6 +26,8 @@ int main(void) {
     
     // task 2:
     // read strings s1 and s2
+    printf("Reading two strings to safely concatenate them.\n");
+    printf("Please enter the first string to read: ");
     bstring s1 = bgets ((bNgetc) fgetc, stdin, '\n');
     if(s1) {  //Check that a string was read
         rmNewLine(s1);
@@ -33,6 +37,7 @@ int main(void) {
         puts("Please provide input in the Input tab.");
     }
     
+    printf("Please enter the second string to read: ");
     bstring s2 = bgets ((bNgetc) fgetc, stdin, '\n');
     if(s2) {  //Check that a string was read
         rmNewLine(s2);
@@ -51,6 +56,8 @@ int main(void) {
     //task 3:
     //read s1 and s2 and print out and print out a message
     //indicating whether s2 is a substring of s1
+    printf("Reading two strings to check if the second string is a substring of the first string.\n");
+    printf("Please enter the first string: ");
     s1 = bgets ((bNgetc) fgetc, stdin, '\n');
     if(s1) {  //Check that a string was read
         rmNewLine(s1);
@@ -60,6 +67,7 @@ int main(void) {
         puts("Please provide input in the Input tab.");
     }
     
+    printf("Please enter the second string: ");
     s2 = bgets ((bNgetc) fgetc, stdin, '\n');
     if(s2) {  //Check that a string was read
         rmNewLine(s2);
